@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Implementar Firebase a un proyecto</title>
+    <link rel="icon" type="image/png" href="https://img1.freepng.es/20180609/ryh/kisspng-firebase-cloud-messaging-google-cloud-messaging-api-as-a-service-5b1bf782ac0ca2.2103995315285594907047.jpg">
+</head>
+<body>
+    <h2><strong>¿Cómo implementamos Firebase a nuestro proyecto de Android?</strong></h2>
+    <p>
+        Hay dos formas:
+        <ul>
+            <li><a href="#1">Opción 1: </a>(recomendado) Usar la consola de Firebase para configurar todo el flujo del trabajo.</li>
+            <li><a href="#2">Opción 2: </a>Usar el asistente de Firebase para Android Studio (se necesita configuración adicional).</li>
+        </ul>        
+    </p>
+    <h1 id="1">Opción 1:</h1>
+    <h3><strong>Paso 1:</strong>Crear un proyecto de Firebase.</h3>
+    <hr>
+    <div>
+        <p>
+            Antes de poder implementar Firebase a tu aplicación, necesitas crear un proyecto de Firebase. Para ello se necesita acceder a la <a href="https://console.firebase.google.com/"><strong>consola de Firebase</strong></a>. Necesitarás una cuenta de Google para poder acceder a ella. Una vez allí, haz click en <strong>"Añadir un proyecto"</strong>, luego pon tu <strong>nombre del proyecto</strong>.
+        </p>
+    </div>
+    <h3><strong>Paso 2:</strong>Registrar tu aplicación.</h3>
+    <hr>
+    <div>
+        <p>
+           Una vez creado el proyecto en Firebase puedes añadirla a tu proyecto en Android Studio.
+        </p>
+        <p>
+            <strong>1.</strong> Click en el icono de Android para correr la configuración del flujo de trabajo.
+        </p>
+        <p>
+            <strong>2.</strong> Ingresa el id de la aplicación en el campo del<strong>nombre de paquete de Android</strong>.
+        </p>
+        <p>
+            <strong>3.</strong> (opcional) Ingresa información adicional al flujo de trabajo.
+        </p>
+        <p>
+            <strong>4.</strong> Click <strong>Registrar aplicación</strong>.
+        </p>
+    </div>
+    <h3><strong>Paso 3:</strong>Añade un archivo de configuración de Firebase.</h3>
+    <hr>
+    <div>
+        <p>
+            <strong>1.</strong> Configurar Firebase en la app:
+            <p>
+                a. Descargar <strong>google-service.json</strong> para obtener el archivo de configuración de Firebase para Android.
+            </p>
+            <p>
+                b. Mueve el archivo de configuración en el modulo directorio de la app.
+            </p>
+            <strong>2.</strong> Para habilitar los productos de Firebase a la aplicación, añade el google-service.plugin al Gradle.
+        </p>
+    </div>
+    <h3><strong>Paso 4:</strong>Añadir Firebase SDK a la app.</h3>
+    <hr>
+    <div>
+        <p>
+            <strong>1.</strong> En el Gradle, añadir la dependencia de Firebase SDK.
+        </p>
+        <p>
+            <strong>2.</strong> Añadir las dependencias de las otras librerías de Firebase.
+        </p>
+        <p>
+            <strong>3.</strong> Sincronizar la app asegurando que Android Studio esté actualizado.
+        </p>
+        <p>
+            <strong>4.</strong> Correr la app.
+        </p>
+    </div>
+    <hr>
+    <h1 id="2">Opción 2:</h1>
+    <hr>
+    <div>
+        <p>
+            <strong>1.</strong> Abrir Android Studio.
+        </p>
+        <p>
+            <strong>2.</strong> Elige Herramientas > Firebase para abrir la ventana del asistente.
+        </p>
+        <p>
+            <strong>3.</strong> Agregar uno de los productos de Firebase.
+        </p>
+        <p>
+            <strong>4.</strong> Click "Conectar con Firebase" para registrar la app.
+        </p>
+        <p>
+            <strong>5.</strong> Verificar que todos los servicios estén actualizados.
+        </p>
+        <p>
+            <strong>6.</strong> Sincronizar la app para verificar que todo tenga la versión necesaria.
+        </p>
+        <p>
+            <strong>7.</strong> Configurar Analythics para compartir los datos de la app.
+        </p>
+        <p>
+            <strong>8.</strong> Correr la app.
+        </p>
+    </div>
+</body>
+</html>
